@@ -1,0 +1,384 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(131, 6, 6);
+  font-family: 'Impact', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- CABECERA ---------- */
+.cabecera {
+  background-color: rgb(255, 253, 253);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+  color: rgb(114, 15, 15);
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+}
+
+.estrella {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.estrella img {
+  height: 90px;
+  width: auto;
+}
+
+.logo {
+  font-size: clamp(32px, 5vw, 80px);
+  line-height: 1;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgb(131, 6, 6);
+  text-shadow: 3px 3px 0 rgba(131, 6, 6, 0.2);
+  margin-right: auto;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  padding: 5px 15px;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+
+.menu a:hover {
+  border-radius: 10%;
+  background-color: rgb(126, 2, 2);
+  color: rgb(247, 237, 237);
+}
+
+/* Carrito con el circulito encima */
+#carrito {
+  position: relative;
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 38px;
+  color: rgb(131, 6, 6);
+}
+
+.contador {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 4px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: rgb(255, 196, 0);
+  color: rgb(60, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  display: none;
+}
+
+.contador.visible {
+  display: block;
+}
+
+.contador.salto {
+  animation: salto 0.3s ease;
+}
+
+@keyframes salto {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ---------- EXTRAS ---------- */
+.info {
+  margin: 15px 0 0;
+  padding: 15px 0;
+  background-color: rgb(255, 253, 253);
+  font-size: 22px;
+}
+
+.info_fila {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 40px;
+}
+
+.info_etiqueta {
+  color: rgb(131, 6, 6);
+  font-size: 30px;
+}
+
+/* ---------- MAPA ---------- */
+.mapa {
+  width: 90%;
+  height: 420px;
+  margin: 15px auto;
+  border: 10px solid rgb(255, 251, 251);
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: rgb(255, 251, 251);
+  box-sizing: border-box;
+}
+
+.mapa iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 15px;
+}
+
+/* ---------- MENÚ ---------- */
+.seccion-menu {
+  padding: 20px 0 0;
+  scroll-margin-top: 110px;
+}
+
+.titulo-seccion {
+  width: 90%;
+  margin: 10px auto 20px;
+  font-size: 56px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgb(247, 237, 237);
+}
+
+/* Franja blanca del título, igual que la cabecera */
+.menu-cabecera {
+  margin: 10px 0 30px;
+  background-color: rgb(255, 253, 253);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.menu-cabecera .titulo-seccion {
+  margin: 0 auto;
+  padding: 10px 0;
+  color: rgb(131, 6, 6);
+}
+
+.contenedor-menu {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  align-items: stretch;
+}
+
+.producto {
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 251, 251);
+  border-radius: 25px;
+  padding: 15px;
+  color: rgb(114, 15, 15);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.producto img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.producto-num {
+  margin-top: 10px;
+  font-size: 18px;
+  color: rgb(165, 12, 12);
+}
+
+.producto-nombre {
+  font-size: 26px;
+  margin: 5px 0;
+}
+
+.producto-precio {
+  font-size: 22px;
+  margin-top: auto; /* precios y botones quedan abajo en todas las tarjetas */
+  margin-bottom: 15px;
+  color: rgb(131, 6, 6);
+}
+
+.producto-botones {
+  display: flex;
+  gap: 10px;
+}
+
+.producto-botones .btn-anadir {
+  flex: 1;
+}
+
+.btn-anadir {
+  padding: 10px 15px;
+  font-family: inherit;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(247, 237, 237);
+  background-color: rgb(131, 6, 6);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    transform 0.2s;
+}
+
+.btn-anadir:hover {
+  background-color: rgb(165, 12, 12);
+  transform: scale(1.03);
+}
+
+.btn-anadir:active {
+  transform: scale(0.97);
+}
+
+/* ---------- PEDIR ---------- */
+.pedir {
+  margin: 30px 0 0;
+  padding: 15px 0;
+  background-color: rgb(255, 253, 253);
+}
+
+.boton-pedir {
+  display: block;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: clamp(32px, 5vw, 60px);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgb(247, 237, 237);
+  background-color: rgb(131, 6, 6);
+  border-radius: 25px;
+  transition:
+    background 0.3s,
+    transform 0.2s;
+}
+
+.boton-pedir:hover {
+  background-color: rgb(165, 12, 12);
+  transform: scale(1.01);
+}
+
+/* ---------- NOSOTROS ---------- */
+.nosotros {
+  margin-top: 40px;
+  padding: 30px 0 50px;
+  background-color: rgb(255, 253, 253);
+  color: rgb(114, 15, 15);
+  scroll-margin-top: 110px;
+}
+
+.nosotros .contenedor-menu {
+  display: block;
+}
+
+.nosotros .titulo-seccion {
+  width: auto;
+  margin-left: 0;
+  color: rgb(131, 6, 6);
+}
+
+.nosotros-texto {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.nosotros-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.tarjeta {
+  background-color: rgb(247, 237, 237);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.tarjeta-icono {
+  font-size: 40px;
+}
+
+.tarjeta-titulo {
+  font-size: 26px;
+  margin: 5px 0;
+}
+
+.tarjeta-texto {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.estrellas {
+  font-size: 28px;
+  color: rgb(255, 170, 0);
+}
+
+.tarjeta-autor {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  color: rgb(131, 6, 6);
+}
+
+.subtitulo {
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(131, 6, 6);
+  margin: 10px 0 15px;
+}

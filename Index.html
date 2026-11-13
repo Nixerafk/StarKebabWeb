@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Kebab_Turkish_Kebab</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="contenedor fila">
+        <h1 class="estrella">
+          <img src="logo-star-kebab.webp" alt="estrella" />
+        </h1>
+
+        <a class="logo" href="#inicio">Star Kebab </a>
+        <nav>
+          <ul class="menu">
+            <li><a href="#inicio"> Inicio</a></li>
+            <li><a href="#menu"> Menú</a></li>
+            <li><a href="#nosotros"> Nosotros</a></li>
+          </ul>
+        </nav>
+        <div id="carrito" aria-label="Carrito">
+          🛒
+          <span id="contador" class="contador" aria-live="polite">0</span>
+        </div>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="info">
+        <div class="contenedor info_fila">
+          <span class="info_etiqueta">Extras:</span>
+          <span>Sin lechuga: +1€</span>
+          <span>Extra carne: +1€</span>
+          <span>Bote Salsa Picante: +0,50€</span>
+          <span>Bote Salsa Blanca: +1€</span>
+        </div>
+      </section>
+
+      <!-- Mapa: sustituye TU+DIRECCION por la calle y ciudad del local, con + en vez de espacios -->
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps?q=Star+Kebab+Plaza+del+Triunfo+de+la+Virgen+del+Rosario+Coronado+09&output=embed"
+          title="Ubicación de Star Kebab"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <section class="seccion-menu" id="menu">
+        <div class="menu-cabecera">
+          <h2 class="titulo-seccion">Menú</h2>
+        </div>
+
+        <div class="contenedor-menu">
+          <div class="producto" data-id="1">
+            <img src="oferta-1.png" alt="Durum XL" />
+            <div class="producto-num">1</div>
+            <div class="producto-nombre">Durum XL</div>
+            <div class="producto-precio">6,50€</div>
+            <button class="btn-anadir" data-nombre="Durum XL" data-precio="6.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="2">
+            <img src="oferta-2.png" alt="Menú especial de la casa" />
+            <div class="producto-num">2</div>
+            <div class="producto-nombre">Menú especial de la casa</div>
+            <div class="producto-precio">8,99€</div>
+            <button class="btn-anadir" data-nombre="Menú especial de la casa" data-precio="8.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="3">
+            <img src="oferta-3.png" alt="Durum normal" />
+            <div class="producto-num">3</div>
+            <div class="producto-nombre">Durum normal</div>
+            <div class="producto-precio">5,99€</div>
+            <button class="btn-anadir" data-nombre="Durum normal" data-precio="5.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="4">
+            <img src="oferta-4.png" alt="Menú durum normal" />
+            <div class="producto-num">4</div>
+            <div class="producto-nombre">Menú durum normal</div>
+            <div class="producto-precio">8,50€</div>
+            <button class="btn-anadir" data-nombre="Menú durum normal" data-precio="8.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="5">
+            <img src="oferta-5.png" alt="Kebab" />
+            <div class="producto-num">5</div>
+            <div class="producto-nombre">Kebab</div>
+            <div class="producto-precio">5,50€</div>
+            <button class="btn-anadir" data-nombre="Kebab" data-precio="5.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="6">
+            <img src="oferta-6.png" alt="Menú kebab" />
+            <div class="producto-num">6</div>
+            <div class="producto-nombre">Menú kebab</div>
+            <div class="producto-precio">7,99€</div>
+            <button class="btn-anadir" data-nombre="Menú kebab" data-precio="7.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="7">
+            <img src="oferta-7.png" alt="Pizza turca Lahmacum" />
+            <div class="producto-num">7</div>
+            <div class="producto-nombre">Pizza turca Lahmacum</div>
+            <div class="producto-precio">7,50€</div>
+            <button class="btn-anadir" data-nombre="Pizza turca Lahmacum" data-precio="7.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="8">
+            <img src="oferta-8.png" alt="Menú pizza turca" />
+            <div class="producto-num">8</div>
+            <div class="producto-nombre">Menú pizza turca</div>
+            <div class="producto-precio">9,50€</div>
+            <button class="btn-anadir" data-nombre="Menú pizza turca" data-precio="9.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="9">
+            <img src="oferta-9.png" alt="Plato kebab 1 persona" />
+            <div class="producto-num">9</div>
+            <div class="producto-nombre">Plato kebab 1 persona</div>
+            <div class="producto-precio">8,50€</div>
+            <button class="btn-anadir" data-nombre="Plato kebab 1 persona" data-precio="8.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="10">
+            <img src="oferta-10.png" alt="Menú plato kebab 1 persona" />
+            <div class="producto-num">10</div>
+            <div class="producto-nombre">Menú plato kebab 1 persona</div>
+            <div class="producto-precio">9,50€</div>
+            <button class="btn-anadir" data-nombre="Menú plato kebab 1 persona" data-precio="9.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="11">
+            <img src="oferta-11.png" alt="Plato kebab 2 personas" />
+            <div class="producto-num">11</div>
+            <div class="producto-nombre">Plato kebab 2 personas</div>
+            <div class="producto-precio">14,50€</div>
+            <button class="btn-anadir" data-nombre="Plato kebab 2 personas" data-precio="14.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="12">
+            <img src="oferta-12.png" alt="Menú plato kebab 2 personas" />
+            <div class="producto-num">12</div>
+            <div class="producto-nombre">Menú plato kebab 2 personas</div>
+            <div class="producto-precio">15,99€</div>
+            <button class="btn-anadir" data-nombre="Menú plato kebab 2 personas" data-precio="15.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="13">
+            <img src="oferta-13.png" alt="Plato kebab con arroz" />
+            <div class="producto-num">13</div>
+            <div class="producto-nombre">Plato kebab con arroz</div>
+            <div class="producto-precio">8,99€</div>
+            <button class="btn-anadir" data-nombre="Plato kebab con arroz" data-precio="8.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="14">
+            <img src="oferta-14.png" alt="Menú plato kebab con arroz" />
+            <div class="producto-num">14</div>
+            <div class="producto-nombre">Menú plato kebab con arroz</div>
+            <div class="producto-precio">9,99€</div>
+            <button class="btn-anadir" data-nombre="Menú plato kebab con arroz" data-precio="9.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="15">
+            <img src="oferta-15.png" alt="Menú plato falafel" />
+            <div class="producto-num">15</div>
+            <div class="producto-nombre">Menú plato falafel</div>
+            <div class="producto-precio">7,50€</div>
+            <button class="btn-anadir" data-nombre="Menú plato falafel" data-precio="7.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="16">
+            <img src="oferta-16.png" alt="Chicken Pops American" />
+            <div class="producto-num">16</div>
+            <div class="producto-nombre">Chicken Pops American (15 unidades)</div>
+            <div class="producto-precio">4,99€</div>
+            <button class="btn-anadir" data-nombre="Chicken Pops American (15 unidades)" data-precio="4.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="17">
+            <img src="oferta-17.png" alt="Finger American Crispy" />
+            <div class="producto-num">17</div>
+            <div class="producto-nombre">Finger American Crispy (5 unidades)</div>
+            <div class="producto-precio">4,99€</div>
+            <button class="btn-anadir" data-nombre="Finger American Crispy (5 unidades)" data-precio="4.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="18">
+            <img src="oferta-18.png" alt="Star Kapsalon Mini" />
+            <div class="producto-num">18</div>
+            <div class="producto-nombre">Star Kapsalon Mini</div>
+            <div class="producto-precio">8,50€</div>
+            <button class="btn-anadir" data-nombre="Star Kapsalon Mini" data-precio="8.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="19">
+            <img src="oferta-19.png" alt="Star Kapsalon Maxi" />
+            <div class="producto-num">19</div>
+            <div class="producto-nombre">Star Kapsalon Maxi</div>
+            <div class="producto-precio">11,50€</div>
+            <button class="btn-anadir" data-nombre="Star Kapsalon Maxi" data-precio="11.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="20">
+            <img src="oferta-20.png" alt="Star hamburguesa pollo" />
+            <div class="producto-num">20</div>
+            <div class="producto-nombre">Star hamburguesa pollo</div>
+            <div class="producto-precio">4,99€</div>
+            <button class="btn-anadir" data-nombre="Star hamburguesa pollo" data-precio="4.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="21">
+            <img src="oferta-21.png" alt="Menú hamburguesa de pollo" />
+            <div class="producto-num">21</div>
+            <div class="producto-nombre">Menú hamburguesa de pollo</div>
+            <div class="producto-precio">7,50€</div>
+            <button class="btn-anadir" data-nombre="Menú hamburguesa de pollo" data-precio="7.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="22">
+            <img src="oferta-22.png" alt="Star Hamburger Crispy" />
+            <div class="producto-num">22</div>
+            <div class="producto-nombre">Star Hamburger Crispy</div>
+            <div class="producto-precio">5,50€</div>
+            <button class="btn-anadir" data-nombre="Star Hamburger Crispy" data-precio="5.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="23">
+            <img src="oferta-23.png" alt="Menú Star Hamburger Crispy" />
+            <div class="producto-num">23</div>
+            <div class="producto-nombre">Menú Star Hamburger Crispy</div>
+            <div class="producto-precio">7,99€</div>
+            <button class="btn-anadir" data-nombre="Menú Star Hamburger Crispy" data-precio="7.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="24">
+            <img src="oferta-24.png" alt="Hamburguesa de ternera" />
+            <div class="producto-num">24</div>
+            <div class="producto-nombre">Hamburguesa de ternera</div>
+            <div class="producto-precio">4,99€</div>
+            <button class="btn-anadir" data-nombre="Hamburguesa de ternera" data-precio="4.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="25">
+            <img src="oferta-25.png" alt="Menú hamburguesa ternera" />
+            <div class="producto-num">25</div>
+            <div class="producto-nombre">Menú hamburguesa ternera</div>
+            <div class="producto-precio">7,99€</div>
+            <button class="btn-anadir" data-nombre="Menú hamburguesa ternera" data-precio="7.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="26">
+            <img src="oferta-26.png" alt="Menú plato infantil" />
+            <div class="producto-num">26</div>
+            <div class="producto-nombre">Menú plato infantil</div>
+            <div class="producto-precio">7,50€</div>
+            <button class="btn-anadir" data-nombre="Menú plato infantil" data-precio="7.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="27">
+            <img src="oferta-27.png" alt="Menú donner box" />
+            <div class="producto-num">27</div>
+            <div class="producto-nombre">Menú donner box</div>
+            <div class="producto-precio">7,50€</div>
+            <button class="btn-anadir" data-nombre="Menú donner box" data-precio="7.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="28">
+            <img src="oferta-28.png" alt="Star ensalada de pollo" />
+            <div class="producto-num">28</div>
+            <div class="producto-nombre">Star ensalada de pollo</div>
+            <div class="producto-precio">6,99€</div>
+            <button class="btn-anadir" data-nombre="Star ensalada de pollo" data-precio="6.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="29">
+            <img src="oferta-29.png" alt="Star ensalada mixta" />
+            <div class="producto-num">29</div>
+            <div class="producto-nombre">Star ensalada mixta</div>
+            <div class="producto-precio">5,99€</div>
+            <button class="btn-anadir" data-nombre="Star ensalada mixta" data-precio="5.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="30">
+            <img src="oferta-30.png" alt="Alitas de pollo" />
+            <div class="producto-num">30</div>
+            <div class="producto-nombre">Alitas de pollo</div>
+            <div class="producto-precio">5,50€ 6 uds / 10,50€ 12 uds</div>
+            <div class="producto-botones">
+              <button class="btn-anadir" data-nombre="Alitas de pollo (6 uds)" data-precio="5.50">6 uds</button>
+              <button class="btn-anadir" data-nombre="Alitas de pollo (12 uds)" data-precio="10.50">12 uds</button>
+            </div>
+          </div>
+
+          <div class="producto" data-id="31">
+            <img src="oferta-31.png" alt="Nuggets de pollo" />
+            <div class="producto-num">31</div>
+            <div class="producto-nombre">Nuggets de pollo</div>
+            <div class="producto-precio">4,99€ 6 uds / 9,99€ 12 uds</div>
+            <div class="producto-botones">
+              <button class="btn-anadir" data-nombre="Nuggets de pollo (6 uds)" data-precio="4.99">6 uds</button>
+              <button class="btn-anadir" data-nombre="Nuggets de pollo (12 uds)" data-precio="9.99">12 uds</button>
+            </div>
+          </div>
+
+          <div class="producto" data-id="32">
+            <img src="oferta-32.png" alt="Durum vegetal" />
+            <div class="producto-num">32</div>
+            <div class="producto-nombre">Durum vegetal</div>
+            <div class="producto-precio">4,50€</div>
+            <button class="btn-anadir" data-nombre="Durum vegetal" data-precio="4.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="33">
+            <img src="oferta-33.png" alt="Durum gratinado" />
+            <div class="producto-num">33</div>
+            <div class="producto-nombre">Durum gratinado</div>
+            <div class="producto-precio">7,99€</div>
+            <button class="btn-anadir" data-nombre="Durum gratinado" data-precio="7.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="34">
+            <img src="oferta-34.png" alt="Finger mozzarella" />
+            <div class="producto-num">34</div>
+            <div class="producto-nombre">Finger mozzarella (6 unidades)</div>
+            <div class="producto-precio">4,99€</div>
+            <button class="btn-anadir" data-nombre="Finger mozzarella (6 unidades)" data-precio="4.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="35">
+            <img src="oferta-35.png" alt="Patatas fritas" />
+            <div class="producto-num">35</div>
+            <div class="producto-nombre">Patatas fritas con salsa de queso</div>
+            <div class="producto-precio">2,50€</div>
+            <button class="btn-anadir" data-nombre="Patatas fritas con salsa de queso" data-precio="2.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="36">
+            <img src="oferta-36.png" alt="Menú Shawarma XXL" />
+            <div class="producto-num">36</div>
+            <div class="producto-nombre">Menú Shawarma XXL</div>
+            <div class="producto-precio">10,99€</div>
+            <button class="btn-anadir" data-nombre="Menú Shawarma XXL" data-precio="10.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="37">
+            <img src="oferta-37.png" alt="Shawarma XXL" />
+            <div class="producto-num">37</div>
+            <div class="producto-nombre">Shawarma XXL</div>
+            <div class="producto-precio">7,99€</div>
+            <button class="btn-anadir" data-nombre="Shawarma XXL" data-precio="7.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="38">
+            <img src="oferta-38.png" alt="Plato especial" />
+            <div class="producto-num">38</div>
+            <div class="producto-nombre">Plato especial</div>
+            <div class="producto-precio">10,50€</div>
+            <button class="btn-anadir" data-nombre="Plato especial" data-precio="10.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="39">
+            <img src="oferta-39.png" alt="Plato patatas y carne" />
+            <div class="producto-num">39</div>
+            <div class="producto-nombre">Plato patatas y carne</div>
+            <div class="producto-precio">9,50€</div>
+            <button class="btn-anadir" data-nombre="Plato patatas y carne" data-precio="9.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="40">
+            <img src="oferta-40.png" alt="Menú parejas" />
+            <div class="producto-num">40</div>
+            <div class="producto-nombre">Menú parejas</div>
+            <div class="producto-precio">14,99€</div>
+            <button class="btn-anadir" data-nombre="Menú parejas" data-precio="14.99">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="41">
+            <img src="oferta-41.png" alt="Ración falafel" />
+            <div class="producto-num">41</div>
+            <div class="producto-nombre">Ración falafel (8 unidades)</div>
+            <div class="producto-precio">3,50€</div>
+            <button class="btn-anadir" data-nombre="Ración falafel (8 unidades)" data-precio="3.50">Añadir</button>
+          </div>
+
+          <div class="producto" data-id="42">
+            <img src="oferta-42.png" alt="Durum + patatas dentro" />
+            <div class="producto-num">42</div>
+            <div class="producto-nombre">Durum + patatas dentro</div>
+            <div class="producto-precio">6,00€ normal / 7,00€ XL</div>
+            <div class="producto-botones">
+              <button class="btn-anadir" data-nombre="Durum + patatas dentro (normal)" data-precio="6.00">Normal</button>
+              <button class="btn-anadir" data-nombre="Durum + patatas dentro (XL)" data-precio="7.00">XL</button>
+            </div>
+          </div>
+
+          <div class="producto" data-id="43">
+            <img src="oferta-43.png" alt="Plato patatas con queso" />
+            <div class="producto-num">43</div>
+            <div class="producto-nombre">Plato patatas con queso</div>
+            <div class="producto-precio">4,99€ mini / 6,99€ maxi</div>
+            <div class="producto-botones">
+              <button class="btn-anadir" data-nombre="Plato patatas con queso (mini)" data-precio="4.99">Mini</button>
+              <button class="btn-anadir" data-nombre="Plato patatas con queso (maxi)" data-precio="6.99">Maxi</button>
+            </div>
+          </div>
+        </div>
+
+        <section class="pedir">
+          <div class="contenedor">
+            <a class="boton-pedir" href="https://smartmenu.agorapos.com/?id=c8un22zg&workplaceId=ee98kjtc&priceListId=2#/" target="_blank" rel="noopener noreferrer">
+              Pedir
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <section class="nosotros" id="nosotros">
+        <div class="contenedor-menu">
+          <h2 class="titulo-seccion">Nosotros</h2>
+
+          <div class="nosotros-texto">
+            Somos Star Kebab, un local de comida para llevar donde preparamos
+            kebabs, durums, hamburguesas y mucho más. Escribe aquí cómo es el
+            local y la historia del negocio.
+          </div>
+
+          <div class="nosotros-tarjetas">
+            <div class="tarjeta">
+              <div class="tarjeta-icono">🛵</div>
+              <div class="tarjeta-titulo">Comida a domicilio</div>
+              <div class="tarjeta-texto">Pide desde casa y te lo llevamos.</div>
+            </div>
+            <div class="tarjeta">
+              <div class="tarjeta-icono">🏪</div>
+              <div class="tarjeta-titulo">Próximamente en tienda</div>
+              <div class="tarjeta-texto">Muy pronto podrás venir a comer al local.</div>
+            </div>
+            <div class="tarjeta">
+              <div class="tarjeta-icono">🥙</div>
+              <div class="tarjeta-titulo">Comida para llevar</div>
+              <div class="tarjeta-texto">Recoge tu pedido en el local.</div>
+            </div>
+          </div>
+
+          <h3 class="subtitulo">Valoraciones</h3>
+          <div class="nosotros-tarjetas">
+            <div class="tarjeta">
+              <div class="estrellas">★★★★★</div>
+              <div class="tarjeta-texto"></div>
+              <div class="tarjeta-autor"></div>
+            </div>
+            <div class="tarjeta">
+              <div class="estrellas">★★★★★</div>
+              <div class="tarjeta-texto"></div>
+              <div class="tarjeta-autor"></div>
+            </div>
+            <div class="tarjeta">
+              <div class="estrellas">★★★★★</div>
+              <div class="tarjeta-texto"></div>
+              <div class="tarjeta-autor"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
