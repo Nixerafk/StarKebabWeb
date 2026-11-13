@@ -71,7 +71,7 @@ a {
 }
 
 .menu a:hover {
-  border-radius: 10%;
+  border-radius: 4px;
   background-color: rgb(126, 2, 2);
   color: rgb(247, 237, 237);
 }
@@ -277,11 +277,7 @@ a {
   transform: scale(1.03);
 }
 
-.btn-anadir:active {
-  transform: scale(0.97);
-}
 
-/* ---------- PEDIR ---------- */
 .pedir {
   margin: 30px 0 0;
   padding: 15px 0;
@@ -305,7 +301,7 @@ a {
 
 .boton-pedir:hover {
   background-color: rgb(165, 12, 12);
-  transform: scale(1.01);
+  transform: scale(1.02);
 }
 
 /* ---------- NOSOTROS ---------- */
